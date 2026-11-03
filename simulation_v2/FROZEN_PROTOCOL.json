@@ -1,0 +1,30 @@
+{
+ "frozen": "2026-11-01",
+ "evaluation_seeds": [
+  101,
+  200
+ ],
+ "events": [
+  180,
+  60
+ ],
+ "fingerprints": {
+  "simulation_v2/__init__.py": "E788899CAE748B53",
+  "simulation_v2/generator.py": "759140A6F7E59130",
+  "simulation_v2/methods.py": "2E64816BBF27567D",
+  "simulation_v2/audits.py": "5CC54DA5190A5F6E",
+  "simulation_v2/run.py": "64D160DEE10A8935",
+  "simulation_v2/summary.py": "244A410EF78FACD4",
+  "simulation_v2/calibrate.py": "E23AC0A075131803",
+  "simulation_v2/results/calibration/hyperparameters.json": "BB343829E5A5127A",
+  "simulation_v2/PLAN.md": "7A06EF24E8C416F8",
+  "simulation/generator.py": "27A978AE1DC02187",
+  "simulation/models.py": "F4F0758E51B307D4",
+  "src/rabmv/estimator.py": "787D0B0E964C15DF",
+  "src/rabmv/checks.py": "CC2A8C6658BE21DD",
+  "src/rabmv/eligibility.py": "A3075BA04C378F52",
+  "src/rabmv/availability.py": "713BD48C8E13A5FC",
+  "src/rabmv/schema/mapping.py": "C083A393FA22F66D",
+  "src/rabmv/schema/catalog.py": "17C20102BC33C510"
+ }
+}

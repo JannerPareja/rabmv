@@ -1,0 +1,14 @@
+name: Feature request or new registry
+description: Propose an improvement, or share how your registry's forms could be declared
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What you need and why
+    validations:
+      required: true
+  - type: textarea
+    id: registry
+    attributes:
+      label: Registry structure (forms, versions, fields that differ), if relevant

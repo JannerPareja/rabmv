@@ -1,0 +1,80 @@
+form = "B"
+version = "1"
+valid_from = 2016-01-01
+
+[concepts.age]
+equivalence = "exact"
+blank = "missing"
+
+[concepts.sex]
+equivalence = "exact"
+blank = "missing"
+recoding = { "female" = "F", "male" = "M" }
+
+[concepts.area]
+equivalence = "exact"
+blank = "missing"
+recoding = { "1" = 1, "2" = 2, "3" = 3 }
+
+[concepts.insurance]
+equivalence = "exact"
+blank = "missing"
+recoding = { "c" = "C", "s" = "S", "p" = "P", "e" = "E", "n" = "N", "i" = "I" }
+
+[concepts.occupation]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.stratum]
+equivalence = "exact"
+blank = "missing"
+recoding = { "0" = 0, "1" = 1, "2" = 2, "3" = 3, "4" = 4, "5" = 5, "6" = 6 }
+
+[concepts.marital_status]
+equivalence = "exact"
+blank = "missing"
+recoding = { "1" = 1, "2" = 2, "3" = 3, "4" = 4, "5" = 5 }
+
+[concepts.education]
+equivalence = "aggregated"
+blank = "missing"
+resolution = "five_levels"
+recoding = { "out of school" = 0, "primary" = 2, "secondary" = 3, "technical" = 7, "university" = 9 }
+
+[concepts.f3]
+equivalence = "partial"
+blank = "no"
+response = "single"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f4]
+equivalence = "partial"
+blank = "no"
+response = "single"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f5]
+equivalence = "partial"
+blank = "no"
+response = "single"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f6]
+equivalence = "partial"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f7]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f8]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }

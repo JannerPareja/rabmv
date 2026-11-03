@@ -1,0 +1,172 @@
+{
+ "rule": "Pre-specified rule (written before running it): with seeds 1\u201320 (never used in the evaluation, which uses 101\u2013200) in the no-difference scenario (no differential measurement, nothing missing), each engine takes the combination of its grid with the lowest mean excess log-loss over the oracle in a new registry of 10,000 events. The engines are thus tuned for the population, never for the missingness, and the same hyperparameters are then used by every strategy of that engine. Ties (difference < 1e-4) go to the first combination of the grid.",
+ "seeds": [
+  1,
+  20
+ ],
+ "chosen": {
+  "rabmv": {
+   "learning_rate": 0.05,
+   "max_leaves": 3,
+   "min_samples_leaf": 60,
+   "max_bins": 128,
+   "smoothing": 2.0
+  },
+  "ebm": {
+   "learning_rate": 0.05,
+   "min_samples_leaf": 2,
+   "max_bins": 1024,
+   "smoothing_rounds": 75
+  }
+ },
+ "grid_means": {
+  "rabmv": [
+   {
+    "combination": 0,
+    "excess_logloss": 0.01049,
+    "aucpr": 0.41863,
+    "cal_slope": 1.04692
+   },
+   {
+    "combination": 1,
+    "excess_logloss": 0.00938,
+    "aucpr": 0.42004,
+    "cal_slope": 1.09465
+   },
+   {
+    "combination": 2,
+    "excess_logloss": 0.01147,
+    "aucpr": 0.4083,
+    "cal_slope": 1.11126
+   },
+   {
+    "combination": 3,
+    "excess_logloss": 0.00981,
+    "aucpr": 0.42134,
+    "cal_slope": 1.05008
+   },
+   {
+    "combination": 4,
+    "excess_logloss": 0.00907,
+    "aucpr": 0.42136,
+    "cal_slope": 1.09256
+   },
+   {
+    "combination": 5,
+    "excess_logloss": 0.01111,
+    "aucpr": 0.40983,
+    "cal_slope": 1.11073
+   },
+   {
+    "combination": 6,
+    "excess_logloss": 0.01008,
+    "aucpr": 0.42188,
+    "cal_slope": 1.04902
+   },
+   {
+    "combination": 7,
+    "excess_logloss": 0.00774,
+    "aucpr": 0.43251,
+    "cal_slope": 1.09356
+   },
+   {
+    "combination": 8,
+    "excess_logloss": 0.00785,
+    "aucpr": 0.43143,
+    "cal_slope": 1.11246
+   },
+   {
+    "combination": 9,
+    "excess_logloss": 0.00956,
+    "aucpr": 0.42252,
+    "cal_slope": 1.04511
+   },
+   {
+    "combination": 10,
+    "excess_logloss": 0.00761,
+    "aucpr": 0.43106,
+    "cal_slope": 1.08202
+   },
+   {
+    "combination": 11,
+    "excess_logloss": 0.00756,
+    "aucpr": 0.43118,
+    "cal_slope": 1.10159
+   }
+  ],
+  "ebm": [
+   {
+    "combination": 0,
+    "excess_logloss": 0.00996,
+    "aucpr": 0.42148,
+    "cal_slope": 1.06132
+   },
+   {
+    "combination": 1,
+    "excess_logloss": 0.00737,
+    "aucpr": 0.43199,
+    "cal_slope": 1.09101
+   },
+   {
+    "combination": 2,
+    "excess_logloss": 0.00779,
+    "aucpr": 0.42946,
+    "cal_slope": 1.05163
+   },
+   {
+    "combination": 3,
+    "excess_logloss": 0.00983,
+    "aucpr": 0.4223,
+    "cal_slope": 1.06389
+   },
+   {
+    "combination": 4,
+    "excess_logloss": 0.00736,
+    "aucpr": 0.432,
+    "cal_slope": 1.09152
+   },
+   {
+    "combination": 5,
+    "excess_logloss": 0.00772,
+    "aucpr": 0.42956,
+    "cal_slope": 1.04709
+   },
+   {
+    "combination": 6,
+    "excess_logloss": 0.00974,
+    "aucpr": 0.42384,
+    "cal_slope": 1.06373
+   },
+   {
+    "combination": 7,
+    "excess_logloss": 0.00667,
+    "aucpr": 0.43916,
+    "cal_slope": 1.09134
+   },
+   {
+    "combination": 8,
+    "excess_logloss": 0.00682,
+    "aucpr": 0.43761,
+    "cal_slope": 1.04467
+   },
+   {
+    "combination": 9,
+    "excess_logloss": 0.00955,
+    "aucpr": 0.42454,
+    "cal_slope": 1.06739
+   },
+   {
+    "combination": 10,
+    "excess_logloss": 0.00667,
+    "aucpr": 0.43933,
+    "cal_slope": 1.08981
+   },
+   {
+    "combination": 11,
+    "excess_logloss": 0.00675,
+    "aucpr": 0.43765,
+    "cal_slope": 1.03903
+   }
+  ]
+ }
+}

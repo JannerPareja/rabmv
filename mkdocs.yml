@@ -1,0 +1,38 @@
+site_name: RabMV
+site_url: https://jannerpareja.github.io/rabmv/
+site_description: Registry-Aware Boosting Machine of Valledupar
+site_author: Janer Alfonso Pareja Gutiérrez and Margarita Rosa Gamarra Acosta
+copyright: "© 2026 Janer Alfonso Pareja Gutiérrez and Margarita Rosa Gamarra Acosta · Universidad del Norte · BSD-3-Clause"
+repo_url: https://github.com/jannerpareja/rabmv
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle: {icon: material/brightness-7, name: Dark mode}
+    - scheme: slate
+      primary: indigo
+      toggle: {icon: material/brightness-4, name: Light mode}
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quickstart: quickstart.md
+  - Schema reference: schema.md
+  - Method: method.md
+  - Theory: theory/purification.md
+  - Validation: validation.md
+  - Reproducibility: reproducibility.md
+  - API: api.md
+  - Authors and citation: about.md
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js

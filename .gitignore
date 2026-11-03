@@ -1,0 +1,28 @@
+# Never data nor models trained with real data
+*.csv
+*.xls
+*.xlsx
+*.pdf
+*.joblib
+*.pkl
+*.pickle
+data/
+# Exception: the synthetic simulation results are versioned. The development results come from real data:
+# they stay out of the repository until their publication is decided.
+!simulation/results/*.csv
+!simulation_v2/results/**/*.csv
+# The public synthetic example registry
+!examples/**/*.csv
+# Builds
+dist/
+build/
+site/
+# The test level of simulation v2 only measures times and finds errors
+simulation_v2/results/test/
+development/results/
+# Environment and caches
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/

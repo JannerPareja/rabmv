@@ -1,0 +1,27 @@
+{
+  "rule": "largest alpha with S4 specificity ≥ 0.995 (Wilson lower ≥ 0.99) and sensitivity at 180 events ≥ 0.95 (A) and ≥ 0.90 (B, C, E); if none meets the sensitivity, the largest that meets the specificity",
+  "chosen_alpha": 0.01,
+  "meets_sensitivity": true,
+  "real_events": {
+    "180": {
+      "mean": 173.66,
+      "min": 157,
+      "max": 180
+    },
+    "120": {
+      "mean": 120.0,
+      "min": 120,
+      "max": 120
+    },
+    "60": {
+      "mean": 60.0,
+      "min": 60,
+      "max": 60
+    }
+  },
+  "seconds": 69.5,
+  "seeds": [
+    1,
+    50
+  ]
+}

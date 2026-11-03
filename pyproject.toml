@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rabmv"
+version = "0.1.0"
+description = "RabMV: Registry-Aware Boosting Machine of Valledupar, an explainable boosting machine that knows the structure of the registry"
+readme = "README.md"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Janer Alfonso Pareja Gutiérrez", email = "aparejaj@uninorte.edu.co" },
+    { name = "Margarita Rosa Gamarra Acosta", email = "mrgamarra@uninorte.edu.co" },
+]
+maintainers = [{ name = "Janer Alfonso Pareja Gutiérrez", email = "aparejaj@uninorte.edu.co" }]
+requires-python = ">=3.12"
+keywords = ["explainable boosting machine", "generalized additive model", "surveillance", "registry",
+            "missing data", "differential measurement", "shortcut learning", "public health"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = [
+    "numpy>=2.4",
+    "pandas>=3.0",
+    "scikit-learn>=1.8",
+    "scipy>=1.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/jannerpareja/rabmv"
+Documentation = "https://jannerpareja.github.io/rabmv/"
+Source = "https://github.com/jannerpareja/rabmv"
+Issues = "https://github.com/jannerpareja/rabmv/issues"
+Changelog = "https://github.com/jannerpareja/rabmv/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+# Development with real data (folder development/) and the simulations: InterpretML's EBM, balancing methods
+# and optimizers of Competencia 1, with the same versions as the Competencia 1 environment.
+development = ["interpret-core==0.7.8", "imbalanced-learn==0.14.1", "optuna==5.0.0", "deap==1.4.4",
+               "matplotlib>=3.9", "tabulate>=0.9"]
+docs = ["mkdocs>=1.6", "mkdocs-material>=9.5", "pymdown-extensions>=10.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = [
+    # InterpretML warns that its plots do not show missing values; the tests use its missing bin on purpose
+    "ignore:Missing values detected:UserWarning",
+    # scikit-learn skips its array-API check unless SCIPY_ARRAY_API is set; RabMV works on NumPy arrays
+    "ignore::sklearn.exceptions.SkipTestWarning",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# Frozen copy of EBMP v1 (never modified; kept in Spanish as the historical reference)
+"tests/reference/*" = ["E501", "E741"]

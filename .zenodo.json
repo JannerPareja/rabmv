@@ -1,0 +1,29 @@
+{
+  "title": "RabMV: Registry-Aware Boosting Machine of Valledupar",
+  "upload_type": "software",
+  "description": "An explainable boosting machine that knows the structure of the public-health registry its data come from: which concepts each surveillance form measures, in which version and how comparably. It audits undeclared differential measurement between forms, admits a concept only when both classes measured it comparably, and marginalizes what a form did not measure, with purified pairwise interactions. Includes two frozen ADEMP simulations and a public synthetic registry.",
+  "creators": [
+    {
+      "name": "Pareja Gutiérrez, Janer Alfonso",
+      "affiliation": "Universidad del Norte, Engineering School, Barranquilla, Colombia",
+      "orcid": "0009-0007-7319-0676"
+    },
+    {
+      "name": "Gamarra Acosta, Margarita Rosa",
+      "affiliation": "Universidad del Norte, Engineering School, Barranquilla, Colombia"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "explainable boosting machine",
+    "generalized additive model",
+    "surveillance registry",
+    "differential measurement",
+    "missing by design",
+    "shortcut learning",
+    "transportability",
+    "suicide"
+  ],
+  "access_right": "open",
+  "notes": "Supported by the Ministry of Science, Technology and Innovation of Colombia (Minciencias, Call 975 of 2026, 'Becas para el Cambio', National Doctorate) and by Universidad del Norte. We thank the Secretaría de Salud Municipal de Valledupar, whose surveillance registry motivated the method; its data are not distributed. Part of the doctoral thesis of J. A. Pareja Gutiérrez, supervised by M. R. Gamarra Acosta."
+}

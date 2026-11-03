@@ -1,0 +1,102 @@
+{
+ "C1_transport": {
+  "rule": "E_pi100, target T3: upper 95 % limit of mean \u0394 excess log-loss (RabMV \u2212 comparator) < 0 against each comparator",
+  "results": {
+   "education_vs_ebm_native": {
+    "mean": -0.23301781801451982,
+    "upper95": -0.2201122197287931,
+    "met": true
+   },
+   "education_vs_rabmv_indicator": {
+    "mean": -0.22076899507981237,
+    "upper95": -0.21271708649052815,
+    "met": true
+   },
+   "education_vs_ebm_indicator": {
+    "mean": -0.28710869287679264,
+    "upper95": -0.28205097974591786,
+    "met": true
+   },
+   "education_vs_trees_native": {
+    "mean": -0.49776430590191223,
+    "upper95": -0.49165712824599206,
+    "met": true
+   },
+   "occupation_vs_ebm_native": {
+    "mean": -0.22846011971993532,
+    "upper95": -0.22104500126394505,
+    "met": true
+   },
+   "occupation_vs_rabmv_indicator": {
+    "mean": -0.22521620962295943,
+    "upper95": -0.21748951367067837,
+    "met": true
+   },
+   "occupation_vs_ebm_indicator": {
+    "mean": -0.2979511684376836,
+    "upper95": -0.2932682782314525,
+    "met": true
+   },
+   "occupation_vs_trees_native": {
+    "mean": -0.4758234747105044,
+    "upper95": -0.47100434440784117,
+    "met": true
+   }
+  },
+  "met": true
+ },
+ "C2_no_cost_of_the_rule": {
+  "rule": "MAR (blanks made by people), T0: 90 % CI of \u0394 AUC-PR within \u00b10.01 for the rule against the same engine without it",
+  "results": {
+   "education_rabmv_vs_rabmv_mice": {
+    "mean": 0.00134360013910448,
+    "lower90": 0.000783288171869876,
+    "upper90": 0.001903912106339084,
+    "met": true
+   },
+   "education_ebm_marginalize_vs_ebm_native": {
+    "mean": 0.0022603504154788097,
+    "lower90": 0.0017400559854245394,
+    "upper90": 0.00278064484553308,
+    "met": true
+   },
+   "occupation_rabmv_vs_rabmv_mice": {
+    "mean": 0.0017430147820173341,
+    "lower90": 0.0011203430785607605,
+    "upper90": 0.0023656864854739077,
+    "met": true
+   },
+   "occupation_ebm_marginalize_vs_ebm_native": {
+    "mean": 0.0022287083711774684,
+    "lower90": 0.0017531468783799882,
+    "upper90": 0.0027042698639749485,
+    "met": true
+   }
+  },
+  "met": true
+ },
+ "C3_detection": {
+  "rule": "Wilson lower limit of the sensitivity (E_pi100, undeclared schema) \u2265 0.9 and of the per-concept specificity (no_difference) \u2265 0.99",
+  "sensitivity": [
+   1.0,
+   0.9811546736227335,
+   1.0
+  ],
+  "specificity": [
+   1.0,
+   0.9976048388077468,
+   1.0
+  ],
+  "met": true
+ },
+ "C4_localization": {
+  "rule": "Wilson lower limit of P(gap concept alerted and no honest concept alerted) \u2265 0.9 (E_pi100, undeclared schema)",
+  "estimate": [
+   0.9,
+   0.8505941875672826,
+   0.9343295513309041
+  ],
+  "met": false
+ },
+ "method_validity": false
+}

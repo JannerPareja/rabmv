@@ -1,0 +1,24 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Please use synthetic data only. Never paste rows of a real registry: issues are public."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Minimal example (synthetic data)
+      render: python
+  - type: input
+    id: versions
+    attributes:
+      label: Versions (RabMV, Python, NumPy, pandas, scikit-learn, operating system)
+    validations:
+      required: true

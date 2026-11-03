@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use RabMV, please cite it as below."
+title: "RabMV: Registry-Aware Boosting Machine of Valledupar"
+abstract: >-
+  An explainable boosting machine (a generalized additive model fitted by cyclic Newton boosting) that knows
+  the structure of the public-health registry its data come from: which concepts each surveillance form
+  measures, in which version and how comparably. It declares the registry in TOML files, audits undeclared
+  differential measurement between forms, admits a concept only when both classes measured it comparably, and
+  marginalizes what a form did not measure, with purified pairwise interactions.
+type: software
+authors:
+  - family-names: "Pareja Gutiérrez"
+    given-names: "Janer Alfonso"
+    email: aparejaj@uninorte.edu.co
+    affiliation: "Universidad del Norte, Engineering School, Barranquilla, Colombia"
+    orcid: "https://orcid.org/0009-0007-7319-0676"
+  - family-names: "Gamarra Acosta"
+    given-names: "Margarita Rosa"
+    email: mrgamarra@uninorte.edu.co
+    affiliation: "Universidad del Norte, Engineering School, Barranquilla, Colombia"
+version: 0.1.0
+date-released: "2026-11-03"
+license: BSD-3-Clause
+repository-code: "https://github.com/jannerpareja/rabmv"
+keywords:
+  - explainable boosting machine
+  - generalized additive model
+  - surveillance registry
+  - differential measurement
+  - missing by design
+  - shortcut learning
+  - transportability
+  - suicide

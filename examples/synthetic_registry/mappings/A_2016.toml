@@ -1,0 +1,86 @@
+form = "A"
+version = "2016"
+valid_from = 2016-01-01
+valid_to = 2016-12-31
+[concepts.age]
+equivalence = "exact"
+blank = "missing"
+
+[concepts.sex]
+equivalence = "exact"
+blank = "missing"
+recoding = { "f" = "F", "m" = "M" }
+
+[concepts.area]
+equivalence = "exact"
+blank = "missing"
+recoding = { "1" = 1, "2" = 2, "3" = 3 }
+
+[concepts.insurance]
+equivalence = "exact"
+blank = "missing"
+recoding = { "c" = "C", "s" = "S", "p" = "P", "e" = "E", "n" = "N", "i" = "I" }
+
+[concepts.occupation]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.stratum]
+equivalence = "exact"
+blank = "missing"
+recoding = { "0" = 0, "1" = 1, "2" = 2, "3" = 3, "4" = 4, "5" = 5, "6" = 6 }
+
+[concepts.marital_status]
+equivalence = "exact"
+blank = "missing"
+recoding = { "1" = 1, "2" = 2, "3" = 3, "4" = 4, "5" = 5 }
+
+[concepts.f1]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f2]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f3]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f4]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f5]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f6]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f7]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }
+
+[concepts.f8]
+equivalence = "exact"
+blank = "no"
+response = "multiple"
+recoding = { "1" = 1, "2" = 0 }

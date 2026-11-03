@@ -1,0 +1,81 @@
+{
+  "frozen": "2026-10-26",
+  "refrozen": "2026-10-27",
+  "evaluation_seeds": [
+    101,
+    300
+  ],
+  "events": [
+    180,
+    120,
+    60
+  ],
+  "alpha": 0.01,
+  "calibration": {
+    "chosen_alpha": 0.01,
+    "rule": "largest alpha with S4 specificity ≥ 0.995 (Wilson lower ≥ 0.99) and sensitivity at 180 events ≥ 0.95 (A) and ≥ 0.90 (B, C, E); if none meets the sensitivity, the largest that meets the specificity"
+  },
+  "criteria_180_events": {
+    "detection_A": "lower Wilson limit of the sensitivity >= 0.95",
+    "detection_B_C_E": "lower Wilson limit >= 0.90",
+    "specificity_S4": "lower Wilson limit >= 0.99",
+    "s5a_occupation": "90 % CI of ΔAUC-PR (marginalize − retrain) within ±0.01",
+    "s5b_occupation": "lower limit of the 95 % CI of ΔAUC-PR > −0.01 against retraining and against the mode"
+  },
+  "descriptive": [
+    "S2 transport",
+    "120- and 60-event levels",
+    "education in S5",
+    "global calibration",
+    "F"
+  ],
+  "fingerprints": {
+    "simulation/generator.py": "27A978AE1DC02187",
+    "simulation/models.py": "F4F0758E51B307D4",
+    "simulation/calibrate.py": "018C341104DCA28C",
+    "simulation/evaluate.py": "6E380822CB2CFCD5",
+    "src/rabmv/estimator.py": "787D0B0E964C15DF",
+    "src/rabmv/checks.py": "CC2A8C6658BE21DD",
+    "src/rabmv/eligibility.py": "A3075BA04C378F52",
+    "src/rabmv/availability.py": "713BD48C8E13A5FC",
+    "src/rabmv/schema/mapping.py": "C083A393FA22F66D",
+    "src/rabmv/schema/catalog.py": "17C20102BC33C510",
+    "src/rabmv/core/segmentation.py": "19AE2C97B9F5900A",
+    "src/rabmv/core/binning.py": "A50431EC73335202",
+    "src/rabmv/core/numeric.py": "7C7A1AA523A067C5",
+    "src/rabmv/core/smoothing.py": "2C34E15C2070D657"
+  },
+  "fingerprints_before_translation": {
+    "simulacion/generador.py": "528A212079C3E55F",
+    "simulacion/modelos.py": "BB22CF653970BA7C",
+    "simulacion/calibrar.py": "AD5F4FE0C16D494D",
+    "simulacion/evaluar.py": "DA94C24745F19A31",
+    "src/ebmp/estimador.py": "1A3738513DEDA62F",
+    "src/ebmp/verificaciones.py": "BB2D158E8B16DE51",
+    "src/ebmp/elegibilidad.py": "B352ECB08334F449",
+    "src/ebmp/disponibilidad.py": "F4DFD85317319B31",
+    "src/ebmp/esquema/mapeo.py": "448E8C653E05D6A8",
+    "src/ebmp/esquema/catalogo.py": "56B68BCF7982ACE6",
+    "src/ebmp/nucleo/segmentacion.py": "D3136E42A9FF833F",
+    "src/ebmp/nucleo/intervalos.py": "B6AFE26546094D80",
+    "src/ebmp/nucleo/numerico.py": "4D3634AD5E11CD3D",
+    "src/ebmp/nucleo/suavizado.py": "A8916DE72455B503"
+  },
+  "note": "Frozen on 26 Oct 2026 (Spanish code, package ebmp). Refrozen on 27 Oct 2026 after renaming the package to rabmv and translating code and outputs to English, without changing any computation or random draw; the per-seed CSVs are now written sorted by (events, seed), copying the values as text, so they do not depend on the number of processes and no digit changes. Checked after the translation: calibration and audit identical; the full model evaluation was rerun and every per-seed value matched the 26 Oct run except in the last digit, a difference traced to the earlier sorting step, which parsed and re-printed the floats; recomputed seeds (101/180, 102/60, 250/60) match the 26 Oct values digit for digit. The per-seed models CSV keeps the 26 Oct values with English column names; the summary differs from the 26 Oct one by at most 5.6e-17 and every criterion is unchanged (method_validity true). Earlier refreeze on 26 Oct: the transport scenario kept the 2016 education gap, which only belongs to the Valledupar form (detected by test_simulation). Refrozen on 27 Oct 2026 (0.1.0.dev10) because src/rabmv/estimator.py gained purified interactions with marginalization; the simulation does not use interactions, and the full model evaluation was rerun with the new code: the per-seed CSV and the summary are byte-for-byte identical.",
+  "fingerprints_before_dev10": {
+    "simulation/generator.py": "27A978AE1DC02187",
+    "simulation/models.py": "F4F0758E51B307D4",
+    "simulation/calibrate.py": "018C341104DCA28C",
+    "simulation/evaluate.py": "6E380822CB2CFCD5",
+    "src/rabmv/estimator.py": "D8EFD02788F72DA5",
+    "src/rabmv/checks.py": "CC2A8C6658BE21DD",
+    "src/rabmv/eligibility.py": "A3075BA04C378F52",
+    "src/rabmv/availability.py": "713BD48C8E13A5FC",
+    "src/rabmv/schema/mapping.py": "C083A393FA22F66D",
+    "src/rabmv/schema/catalog.py": "17C20102BC33C510",
+    "src/rabmv/core/segmentation.py": "19AE2C97B9F5900A",
+    "src/rabmv/core/binning.py": "A50431EC73335202",
+    "src/rabmv/core/numeric.py": "7C7A1AA523A067C5",
+    "src/rabmv/core/smoothing.py": "2C34E15C2070D657"
+  }
+}

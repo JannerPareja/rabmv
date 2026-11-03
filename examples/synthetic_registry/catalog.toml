@@ -1,0 +1,78 @@
+[catalog]
+name = "RabMV simulation"
+version = "sim-1"
+
+[concepts.age]
+definition = "Age in years"
+type = "numeric"
+minimum = 0
+maximum = 120
+
+[concepts.sex]
+definition = "Sex"
+type = "nominal"
+categories = ["F", "M"]
+
+[concepts.area]
+definition = "Area"
+type = "nominal"
+categories = [1, 2, 3]
+
+[concepts.insurance]
+definition = "Health insurance scheme"
+type = "nominal"
+categories = ["C", "S", "P", "E", "N", "I"]
+
+[concepts.occupation]
+definition = "Employed"
+type = "binary"
+
+[concepts.stratum]
+definition = "Socioeconomic stratum"
+type = "ordinal"
+levels = [0, 1, 2, 3, 4, 5, 6]
+
+[concepts.marital_status]
+definition = "Marital status"
+type = "nominal"
+categories = [1, 2, 3, 4, 5]
+
+[concepts.education]
+definition = "Education (0 = none)"
+type = "ordinal"
+levels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+[concepts.education.resolutions]
+five_levels = [[0], [1, 2], [3, 4, 5, 6], [7, 8], [9, 10, 11, 12]]
+
+[concepts.f1]
+definition = "Factor f1"
+type = "binary"
+
+[concepts.f2]
+definition = "Factor f2"
+type = "binary"
+
+[concepts.f3]
+definition = "Factor f3"
+type = "binary"
+
+[concepts.f4]
+definition = "Factor f4"
+type = "binary"
+
+[concepts.f5]
+definition = "Factor f5"
+type = "binary"
+
+[concepts.f6]
+definition = "Factor f6"
+type = "binary"
+
+[concepts.f7]
+definition = "Factor f7"
+type = "binary"
+
+[concepts.f8]
+definition = "Factor f8"
+type = "binary"
