@@ -21,6 +21,14 @@ authors:
 version: 0.1.0
 date-released: "2026-11-03"
 license: BSD-3-Clause
+doi: 10.5281/zenodo.23912918
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23912918
+    description: "Concept DOI: all versions, resolves to the latest"
+  - type: doi
+    value: 10.5281/zenodo.23912919
+    description: "Version 0.1.0"
 repository-code: "https://github.com/jannerpareja/rabmv"
 keywords:
   - explainable boosting machine

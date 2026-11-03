@@ -5,6 +5,7 @@
 [![PyPI](https://img.shields.io/pypi/v/rabmv)](https://pypi.org/project/rabmv/)
 [![Python](https://img.shields.io/pypi/pyversions/rabmv)](https://pypi.org/project/rabmv/)
 [![License: BSD-3-Clause](https://img.shields.io/badge/license-BSD--3--Clause-blue)](https://github.com/jannerpareja/rabmv/blob/main/LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23912918.svg)](https://doi.org/10.5281/zenodo.23912918)
 
 *Versión en español: [README.es.md](README.es.md).*
 
@@ -20,8 +21,9 @@ A research method: not a clinical decision tool.
 
 - **Documentation:** <https://jannerpareja.github.io/rabmv/> (sources in [docs/](docs/index.md)): quickstart,
   schema reference, method, theory, validation, API.
-- **License:** BSD-3-Clause. **Citation:** the method article is in preparation; meanwhile cite the software
-  with [CITATION.cff](CITATION.cff) (GitHub shows it as «Cite this repository»).
+- **License:** BSD-3-Clause. **Citation:** the method article is in preparation; meanwhile cite the software:
+  DOI [10.5281/zenodo.23912918](https://doi.org/10.5281/zenodo.23912918) (all versions; version 0.1.0 is [10.5281/zenodo.23912919](https://doi.org/10.5281/zenodo.23912919)), or use
+  [CITATION.cff](CITATION.cff) (GitHub shows it as «Cite this repository»).
 - **Authors:** Janer Alfonso Pareja Gutiérrez (corresponding, aparejaj@uninorte.edu.co) and Margarita Rosa
   Gamarra Acosta, Universidad del Norte, Engineering School, Barranquilla, Colombia.
 

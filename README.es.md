@@ -5,6 +5,7 @@
 [![PyPI](https://img.shields.io/pypi/v/rabmv)](https://pypi.org/project/rabmv/)
 [![Python](https://img.shields.io/pypi/pyversions/rabmv)](https://pypi.org/project/rabmv/)
 [![License: BSD-3-Clause](https://img.shields.io/badge/license-BSD--3--Clause-blue)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23912918.svg)](https://doi.org/10.5281/zenodo.23912918)
 
 *English version: [README.md](README.md).*
 
@@ -20,7 +21,8 @@ Colombia). Es un método de investigación, no una herramienta de decisión clí
 
 - **Documentación** (en inglés): <https://jannerpareja.github.io/rabmv/> (fuentes en [docs/](docs/index.md)).
 - **Licencia:** BSD-3-Clause. **Cómo citarlo:** el artículo del método está en preparación; mientras tanto,
-  cite el software con [CITATION.cff](CITATION.cff) (GitHub lo muestra como «Cite this repository»).
+  cite el software: DOI [10.5281/zenodo.23912918](https://doi.org/10.5281/zenodo.23912918) (todas las versiones; la versión 0.1.0 es
+  [10.5281/zenodo.23912919](https://doi.org/10.5281/zenodo.23912919)), o use [CITATION.cff](CITATION.cff) (GitHub lo muestra como «Cite this repository»).
 - **Autores:** Janer Alfonso Pareja Gutiérrez (autor de correspondencia, aparejaj@uninorte.edu.co) y
   Margarita Rosa Gamarra Acosta, Universidad del Norte, Escuela de Ingeniería, Barranquilla, Colombia.
 

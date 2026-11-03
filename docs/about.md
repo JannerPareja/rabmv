@@ -15,7 +15,7 @@ Margarita Rosa Gamarra Acosta.
 The article describing the method is in preparation. Meanwhile, please cite the software:
 
 > Pareja Gutiérrez, J. A., and Gamarra Acosta, M. R. (2026). *RabMV: Registry-Aware Boosting Machine of
-> Valledupar* (version 0.1.0) [Computer software]. https://github.com/jannerpareja/rabmv
+> Valledupar* (version 0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23912919
 
 ```bibtex
 @software{rabmv,
@@ -23,12 +23,16 @@ The article describing the method is in preparation. Meanwhile, please cite the 
   title   = {{RabMV: Registry-Aware Boosting Machine of Valledupar}},
   version = {0.1.0},
   year    = {2026},
+  publisher = {Zenodo},
+  doi     = {10.5281/zenodo.23912919},
   url     = {https://github.com/jannerpareja/rabmv},
   license = {BSD-3-Clause}
 }
 ```
 
-The repository's `CITATION.cff` holds the same information, and GitHub shows it under «Cite this repository».
+This is the DOI of version 0.1.0. To cite the software regardless of version, use the concept DOI
+[10.5281/zenodo.23912918](https://doi.org/10.5281/zenodo.23912918), which always resolves to the latest version. The repository's `CITATION.cff` holds
+the same information, and GitHub shows it under «Cite this repository».
 
 ## Funding
 
